@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { Target, Eye, Heart, Award, Users, Clock } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 
+// Ensure the file name matches exactly (case-sensitive) and is in the same folder.
+import christechImg from "./Christech.jpeg"; 
+
 const values = [
   {
     icon: Award,
@@ -54,9 +57,6 @@ const About = () => {
                 <p>
                   Christech Services is a young and fast-growing digital and document solutions shop dedicated to making everyday tasks simple, reliable, and stress-free. Launched just a few months ago, our goal has been clear from the start to provide high-quality printing, photocopying, scanning, lamination, and general cybercafé services in a professional and friendly environment.
                 </p>
-                <p>
-                  We pride ourselves on precision and care in every job, from school assignments to business documents. No technical expertise needed, just tell us what you need, and we'll handle the rest. We're committed to a comfortable experience and quality digital services for our community.
-                </p>
               </div>
             </motion.div>
 
@@ -67,16 +67,13 @@ const About = () => {
               transition={{ duration: 0.5 }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-muted rounded-2xl overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Award className="w-10 h-10 text-primary" />
-                    </div>
-                    <p className="font-heading font-bold text-4xl text-primary mb-2">2+</p>
-                    <p className="text-muted-foreground">Months of Excellence</p>
-                  </div>
-                </div>
+              {/* Updated to custom aspect ratio 720x972 */}
+              <div className="aspect-[720/972] w-full bg-muted rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={christechImg} 
+                  alt="About Christech Services" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-xl -z-10" />
             </motion.div>
