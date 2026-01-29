@@ -1,4 +1,4 @@
-import { Printer, Copy, ScanLine, FileText, BookOpen, FileTypeIcon, FileCheck, UserPen } from "lucide-react";
+import { Printer, Copy, ScanLine, FileText, BookOpen, FileTypeIcon, FileCheck, UserPen, Smartphone } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -51,6 +51,12 @@ const services = [
     description: "Get your career started with a professional CV. Expertly crafted to highlight your skills and experience.",
     // price: "₦1,500",
   },
+  {
+    icon: Smartphone,
+    title: "Web and Mobile App Design",
+    description: "Professional web and mobile application design services. Create stunning, user-friendly interfaces for your digital products.",
+    // price: "Custom pricing",
+  },
 ];
 
 const Services = () => {
@@ -77,7 +83,7 @@ const Services = () => {
             description="Choose from our wide range of professional document and printing services."
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <ServiceCard key={service.title} {...service} delay={index * 0.05} />
             ))}

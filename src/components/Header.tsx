@@ -40,7 +40,7 @@ const Header = () => {
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   isActive(link.path)
                     ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    : "text-foreground/80 hover:text-foreground hover:bg-muted"
                 }`}
               >
                 {link.name}
@@ -84,7 +84,7 @@ const Header = () => {
                   className={`px-4 py-3 rounded-lg font-medium transition-colors ${
                     isActive(link.path)
                       ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      : "text-foreground/80 hover:text-foreground hover:bg-muted"
                   }`}
                 >
                   {link.name}

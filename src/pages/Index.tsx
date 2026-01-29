@@ -195,8 +195,8 @@ const Index = () => {
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="rounded-full px-8 text-base border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors"
+                
+                className="rounded-full px-8 text-base bg-white text-primary hover:bg-white/90 transition-colors"
               >
                 <Link to="/contact">Contact Us</Link>
               </Button>
